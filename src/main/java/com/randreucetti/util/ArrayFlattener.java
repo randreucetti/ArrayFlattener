@@ -21,14 +21,14 @@ public class ArrayFlattener {
 	 *            - A multidimensional array to be broken down
 	 * @return A flattened array consisting of the embedded elements of input.
 	 */
-	public static Object[] flatten(Object[] array) {
+	public static Object[] flatten(Object[] inputArray) {
 		List<Object> returnList = new ArrayList<Object>();
-		flatten(array, returnList);
+		flatten(inputArray, returnList);
 		LOGGER.debug("Returning {}", returnList);
 		return returnList.toArray();
 	}
 
-	// recusively break down list
+	// Recursively break down list
 	private static void flatten(Object[] inputArray, List<Object> returnList) {
 		for (int i = 0; i < inputArray.length; i++) {
 			// do we need to breakdown further

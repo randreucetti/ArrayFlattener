@@ -1,1 +1,17 @@
 language: java
+
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "bEmSo0K2LhNc1undErF5Bu0/9fldtJYbPVbOKe8zdt1wzgNp0nviO0jWPS8g7LyDcxy4SXfCU3eK1pPR76LlhvcaVgCkNSS31LCyTqXg2M7lyrJ3ZbHlZjsgNNzRhpJYvMycNRoXgpPUG99ozdti5WkDXUGw45b3b+QyUM7Vt1z9G1toNOY4ozApK8fEMP8QJfnwqWJBYM7vd5OVGpVww4eVEObt2zF7ZMjCS8iooMai8A1Ts2Wi6IFXTZAfmlKd9vs/+qowulFjhqAZoYwTr8wpegXWG4/JmKvSC01zTrWNZ/ghe/CJtfh5m+qHKyCTAued93eR7xrqcKaTrHkFeeZjP5iRzTvaBzigFc/+E1VuFN7cphm1R+SQq8Y5RRb/rxcPkM9I87yduqhbHQxDF8KLwK5AkzPqVc+/kr0zWTjH/iMah61VZXlbQabtUjkfkoINPUj5wV4Z6ycJnHgiCJ4sc1QR0+/QDZqi00bvvGEmKOl6PJzD1b52k5w81ttiY+RI/tq08TUFDN+5IJrgPgXxcmMYhOccBNR5OsiDvSvN5IzVNeCRvZ200NhlKx8ywIqTOcKQvDZlawv7VZ6hEj0GiHI3Ju5NBT3iGpCUcClQTbkIML4PsQjl2OhM46JWXul53IzRIfENPsLReE3PquKYO0rqv2T5gaJo16a0ghg="
+
+addons:
+  coverity_scan:
+    project:
+      name: "randreucetti/ArrayFlattener"
+      description: "<Your project description here>"
+    notification_email: ross.andreucetti@gmail.com
+    build_command_prepend: "<Your build preprocessing command here>"
+    build_command:   "<Your build command here>"
+    branch_pattern: coverity_scan

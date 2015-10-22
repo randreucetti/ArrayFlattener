@@ -40,4 +40,9 @@ public class ArrayFlattenerTest {
 		Assert.assertArrayEquals(flatArray, new Object[] { 1, 2, "fdf", '4', 2.3f, 'c', 0x5c, 12, "string", null, null,
 				17, null, "blah", "blah blah", 27 });
 	}
+	
+	@Test
+	public void testConstructor() {
+		new ArrayFlattener();
+	}
 }

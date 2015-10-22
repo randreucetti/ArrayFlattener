@@ -41,6 +41,14 @@
 					<target>${javaVersion}</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.eluder.coveralls</groupId>
+				<artifactId>coveralls-maven-plugin</artifactId>
+				<version>4.0.0</version>
+				<configuration>
+				    <repoToken>o3rUDeyQsdOzTOijjr9pV2AHdsP3O6xrc</repoToken>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>

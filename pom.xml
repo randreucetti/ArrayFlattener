@@ -12,6 +12,7 @@
 		<slf4jVersion>1.7.12</slf4jVersion>
 		<mvnCmplrPluginVersion>3.3</mvnCmplrPluginVersion>
 		<javaVersion>1.6</javaVersion>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
 		<dependency>

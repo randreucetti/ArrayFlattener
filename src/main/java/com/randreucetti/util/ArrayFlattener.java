@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
  * 
  * @author ross
  */
-public class ArrayFlattener {
+p ublic class ArrayFlattener {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ArrayFlattener.class);
 
 	/**

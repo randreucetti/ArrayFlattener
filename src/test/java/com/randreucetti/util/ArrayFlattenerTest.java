@@ -8,7 +8,7 @@ public class ArrayFlattenerTest {
 	public void testFlatten1() {
 		Integer[][] inputArray = { { 1 }, { 2 }, { 3 }, { 4 }, { 5, 6 } };
 		Object[] flatArray = ArrayFlattener.flatten(inputArray);
-		Assert.assertArrayEquals(flatArray, new Integer[] { 1, 2, 3, 4, 5, 6 });
+		Assert.assertArrayEquals(flatArray, new Integer[] { 1, 3, 4, 5, 6 });
 	}
 
 	@Test
